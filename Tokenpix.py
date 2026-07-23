@@ -1,7 +1,7 @@
 import qrcode
 
 
-pasta = "https://github.com/tauanebraz"
+url = "https://github.com/tauanebraz"
 
 
 qr = qrcode.QRCode(
@@ -11,7 +11,7 @@ qr = qrcode.QRCode(
     border=4,
 )
 
-qr.add_data(pasta)
+qr.add_data(url)
 qr.make(fit=True)
 
 # Criar e salvar a imagem
